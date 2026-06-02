@@ -132,3 +132,26 @@
 
 # result = validate_route(route_points, max_distance)
 # print(f"Is the route valid? {result}")
+
+
+
+
+
+
+def fetch_routing_api(url: str) -> str :
+    if url == "" :
+        raise ValueError("URL cannot be empty")
+    else:
+        return "Route Data Fetched!"
+
+url = ""
+
+try:
+    run = fetch_routing_api(url)
+    print(run)
+except ValueError as e:
+    print(f"Caught an error: {e}")
+finally:
+    print("API request process finished.")
+
+   
