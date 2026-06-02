@@ -154,4 +154,3 @@ except ValueError as e:
 finally:
     print("API request process finished.")
 
-   
