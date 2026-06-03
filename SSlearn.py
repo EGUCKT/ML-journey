@@ -156,5 +156,22 @@
 
 
 
+
+
 # from scratch_math import add_scores
 # print(add_scores(10.5, 20.5))
+
+
+
+
+
+import pandas as pd
+import numpy as np
+
+data = {
+    'road_id': [1, 2, 3, 4],
+    'lighting_lux': [120, 10, 5, 95],          # Raw light level (0-150)
+    'dist_to_police_meters': [1200, 200, 3500, 800], # Distance in meters
+    'crime_reports': [0, 4, 12, 1]              # Incidents reported
+}
+df = pd.DataFrame(data)
