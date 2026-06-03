@@ -23,15 +23,48 @@ import pandas as pd
 # plt.show()
 
 
-plt.style.use("fivethirtyeight")
-# ages = [18, 19, 21, 25, 26, 26, 30, 32, 38, 45, 55]
-ages = pd.read_csv("student_performance.csv")["age"]
-plt.hist(ages, bins=4, edgecolor="black")
 
-plt.title('Ages of Respondents')
-plt.xlabel('Ages')
-plt.ylabel('Total Respondents')
 
-plt.tight_layout()
 
-plt.show()
+# plt.style.use("fivethirtyeight")
+# # ages = [18, 19, 21, 25, 26, 26, 30, 32, 38, 45, 55]
+# ages = pd.read_csv("student_performance.csv")["age"]
+# plt.hist(ages, bins=4, edgecolor="black")
+
+# plt.title('Ages of Respondents')
+# plt.xlabel('Ages')
+# plt.ylabel('Total Respondents')
+
+# plt.tight_layout()
+
+# plt.show()
+
+
+
+
+
+
+
+# plt.style.use("fivethirtyeight")
+# df = pd.read_csv("student_performance.csv")
+# # plt.plot(df["marks"], label="marks")
+
+# plt.hist(df["study_hours"], bins=7, edgecolor="black")
+
+# plt.tight_layout()
+# plt.show()
+
+
+
+
+
+# plt.style.use("fivethirtyeight")
+# df = pd.read_csv("student_performance.csv")
+# plt.scatter(df["study_hours"], df["marks"], edgecolor="black", c=df["age"], cmap="viridis", s=100)
+# colorbar = plt.colorbar()
+# colorbar.set_label("Age of Student")
+# plt.title("Study Hours vs Marks")
+# plt.xlabel("Study Hours")
+# plt.ylabel("Marks")
+# plt.tight_layout()
+# plt.show()

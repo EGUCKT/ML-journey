@@ -38,22 +38,22 @@
 
 """Instead I could have done this"""
 
-import pandas as pd
-import numpy as np
-from SSlearn import df  # Just import the DataFrame directly
+# import pandas as pd
+# import numpy as np
+# from SSlearn import df  # Just import the DataFrame directly
 
-# 1. Feature 1: Normalize light and assign to a new column
-# The raw max light level is 120 in this dataset
-df['normalized_light'] = df['lighting_lux'] / 120
+# # 1. Feature 1: Normalize light and assign to a new column
+# # The raw max light level is 120 in this dataset
+# df['normalized_light'] = df['lighting_lux'] / 120
 
-# 2. Feature 2: Proximity flag (checks the whole column at once)
-df['near_police'] = df['dist_to_police_meters'] < 1000
+# # 2. Feature 2: Proximity flag (checks the whole column at once)
+# df['near_police'] = df['dist_to_police_meters'] < 1000
 
-# 3. Weak Supervision Label: Calculate for all rows simultaneously
-# True booleans act as 1, False acts as 0 in math equations!
-df['safety_label'] = 100 - (df['crime_reports'] * 10) + (df['near_police'] * 10)
+# # 3. Weak Supervision Label: Calculate for all rows simultaneously
+# # True booleans act as 1, False acts as 0 in math equations!
+# df['safety_label'] = 100 - (df['crime_reports'] * 10) + (df['near_police'] * 10)
 
-# Clip the entire column to keep values between 0 and 100
-df['safety_label'] = df['safety_label'].clip(0, 100)
+# # Clip the entire column to keep values between 0 and 100
+# df['safety_label'] = df['safety_label'].clip(0, 100)
 
-print(df)
+# print(df)
