@@ -138,19 +138,23 @@
 
 
 
-def fetch_routing_api(url: str) -> str :
-    if url == "" :
-        raise ValueError("URL cannot be empty")
-    else:
-        return "Route Data Fetched!"
+# def fetch_routing_api(url: str) -> str :
+#     if url == "" :
+#         raise ValueError("URL cannot be empty")
+#     else:
+#         return "Route Data Fetched!"
 
-url = ""
+# url = ""
 
-try:
-    run = fetch_routing_api(url)
-    print(run)
-except ValueError as e:
-    print(f"Caught an error: {e}")
-finally:
-    print("API request process finished.")
+# try:
+#     run = fetch_routing_api(url)
+#     print(run)
+# except ValueError as e:
+#     print(f"Caught an error: {e}")
+# finally:
+#     print("API request process finished.")
 
+
+
+# from scratch_math import add_scores
+# print(add_scores(10.5, 20.5))
