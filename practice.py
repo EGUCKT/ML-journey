@@ -96,3 +96,43 @@ def calculator(num1, num2):
 calculator(a, b)
 print("Thank you for using the calculator!")"""
 
+
+# a = "aiscbgndssydbcyvcdv"
+
+# ans = []
+        
+# for char in set(a):
+#     if a.find(char) == a.rfind(char):
+#         ans = min(ans, a.find(char))
+                
+#         print(ans) if ans != len(a) else print(-1)
+
+# day = int(input("Enter the num: "))
+# wd = ["Monday, Tuesday, wed, thu, fri, sat, sunday"]
+# if day in range(0,8):
+#     print(wd[day - 1])
+# else :
+#     print("invalid")
+
+# match day:
+#         case 1: print("Monday")
+#         case 2: print("Tuesday")
+#         case 3: print("Wednesday")
+#         case 4: print("Thursday")
+#         case 5: print("Friday")
+#         case 6: print("Saturday")
+#         case 7: print("Sunday")
+#         case _: print("Invalid")
+
+# low = int(input("enter the low num: "))
+# high= int(input("enter the high num: "))
+
+# count = high - low + 1
+    
+     # Apply the mathematical formula using integer division (//)
+# total_sum = (count * (low + high)) // 2
+
+# print(total_sum)
+
+
+
