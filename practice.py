@@ -134,5 +134,68 @@ print("Thank you for using the calculator!")"""
 
 # print(total_sum)
 
+# d = int(input("Enter the num; "))
+
+# count = 0
+# crnum = d
+# total = 0
+
+# while count < 50 :
+#     total += crnum
+#     crnum += 10
+#     count += 1
+
+# print(total)
+
+# arr = [1,2,3,3,5,4]
+# n = 6
+# m = 0
+# while m < n:
+#     n -= 1
+#     arr[m], arr[n] = arr[n], arr[m]
+#     m += 1
+# print(arr)
 
 
+# for i in range(5):
+#     for j in range(5):
+#         print('*', end=" ")
+#     print()
+    
+# n = 5
+# for i in range(n):
+#     print('*' * (i + 1))
+
+# for i in range(6):
+#     for j in range(1, i + 1):
+#         print(j, end=" ")    
+#     print()
+
+# for i in range(1, 6):
+#     for j in range(i):
+#         print(i, end=" ")
+#     print()
+
+
+# for i in range(5):
+#     for j in range(5 - i):
+#         print('*', end=" ")
+#     print()
+
+
+# for i in range(5):
+#     for j in range(1, 5 - i + 1):
+#         print(j, end="")
+#     print()
+
+n = 3
+a = "s"
+m = 10
+for i in range(n):
+    for k in range(n, n - 1):
+            print("-", end=" ")
+            n -=1
+    for j in range(i+1):
+        print("*", end="")
+        
+    print()
