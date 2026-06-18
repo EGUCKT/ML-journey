@@ -76,16 +76,16 @@ df = pd.read_csv("student_performance.csv")
 # correlation = df[["study_hours", "marks"]].corr()
 
 """study_hours has the strongest correlation with marks"""
-print(df.corr(numeric_only=True))
-plt.style.use("fivethirtyeight")
-plt.scatter(df["study_hours"], df["marks"], edgecolor="black", c=df["sleep_hours"], cmap="viridis", s=100)
-colorbar = plt.colorbar()
-colorbar.set_label("Sleep Hours")
-plt.title("Study Hours vs Marks")
-plt.xlabel("Study Hours")
-plt.ylabel("Marks")
-plt.tight_layout()
-plt.show()
+# print(df.corr(numeric_only=True))
+# plt.style.use("fivethirtyeight")
+# plt.scatter(df["study_hours"], df["marks"], edgecolor="black", c=df["sleep_hours"], cmap="viridis", s=100)
+# colorbar = plt.colorbar()
+# colorbar.set_label("Sleep Hours")
+# plt.title("Study Hours vs Marks")
+# plt.xlabel("Study Hours")
+# plt.ylabel("Marks")
+# plt.tight_layout()
+# plt.show()
 
 # mean = df["marks"].mean()
 # median = df["marks"].median()
@@ -96,3 +96,9 @@ plt.show()
 # print(f"Mode: {mode}")
 # print(f"Standard Deviation: {std}")
 # print(f"Correlation between Study Hours and Marks: {corr}")
+
+
+
+#SCIKIT LEARN:::-:::
+from sklearn.model_selection import train_test_split
+features = df[["study_hours", "sleep_hours", "attendance"]]

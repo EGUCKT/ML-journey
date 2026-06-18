@@ -99,13 +99,19 @@ print("Thank you for using the calculator!")"""
 
 # a = "aiscbgndssydbcyvcdv"
 
-# ans = []
+# ans = float('inf')
         
 # for char in set(a):
 #     if a.find(char) == a.rfind(char):
 #         ans = min(ans, a.find(char))
-                
-#         print(ans) if ans != len(a) else print(-1)
+           
+# if ans != len(a):
+#     print(ans)
+# else :
+#     print(-1)
+
+
+
 
 # day = int(input("Enter the num: "))
 # wd = ["Monday, Tuesday, wed, thu, fri, sat, sunday"]
@@ -113,6 +119,10 @@ print("Thank you for using the calculator!")"""
 #     print(wd[day - 1])
 # else :
 #     print("invalid")
+
+
+
+
 
 # match day:
 #         case 1: print("Monday")
@@ -124,6 +134,10 @@ print("Thank you for using the calculator!")"""
 #         case 7: print("Sunday")
 #         case _: print("Invalid")
 
+
+
+
+
 # low = int(input("enter the low num: "))
 # high= int(input("enter the high num: "))
 
@@ -133,6 +147,11 @@ print("Thank you for using the calculator!")"""
 # total_sum = (count * (low + high)) // 2
 
 # print(total_sum)
+
+
+
+
+
 
 # d = int(input("Enter the num; "))
 
@@ -147,6 +166,11 @@ print("Thank you for using the calculator!")"""
 
 # print(total)
 
+
+
+
+
+
 # arr = [1,2,3,3,5,4]
 # n = 6
 # m = 0
@@ -157,24 +181,44 @@ print("Thank you for using the calculator!")"""
 # print(arr)
 
 
+
+
+
+
 # for i in range(5):
 #     for j in range(5):
 #         print('*', end=" ")
 #     print()
     
+
+
+
+
 # n = 5
 # for i in range(n):
 #     print('*' * (i + 1))
+
+
+
+
+
 
 # for i in range(6):
 #     for j in range(1, i + 1):
 #         print(j, end=" ")    
 #     print()
 
+
+
+
 # for i in range(1, 6):
 #     for j in range(i):
 #         print(i, end=" ")
 #     print()
+
+
+
+
 
 
 # for i in range(5):
@@ -183,19 +227,54 @@ print("Thank you for using the calculator!")"""
 #     print()
 
 
+
+
+
+
+
 # for i in range(5):
 #     for j in range(1, 5 - i + 1):
 #         print(j, end="")
 #     print()
 
-n = 3
-a = "s"
-m = 10
-for i in range(n):
-    for k in range(n, n - 1):
-            print("-", end=" ")
-            n -=1
-    for j in range(i+1):
-        print("*", end="")
-        
-    print()
+
+
+
+
+
+# s = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+# running_total = s[0]
+# total = s[0]
+
+# for i in range(1, len(s)):
+#     running_total = max(s[i], running_total + s[i])
+#     total = max(total, running_total)
+#     print(total)
+
+
+# nums = [2, 7, 11, 15]
+# target = 9
+# left = 0
+# right = len(nums) - 1
+# current_sum = nums[left] + nums[right]
+
+# sum = []
+
+# while left < right:
+#     if current_sum == target:
+#         print(left, right)
+#     elif current_sum < target:
+#         left +=1
+#     else:
+#         right -=1
+# print()
+
+
+
+
+# sum = 0
+# low = 3
+# high = 8
+# for i in range(low, high + 1):
+#     sum = i + sum
+# print(sum)
