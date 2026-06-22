@@ -543,4 +543,3 @@ print("Thank you for using the calculator!")"""
 #         print(n - minDist, end=" ")
 #     print()
 
-
