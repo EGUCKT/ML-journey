@@ -451,3 +451,96 @@ print("Thank you for using the calculator!")"""
 #     print()
 
 
+
+"""Print ABCD pyramid with shared characters invertedly"""
+# n = 10
+# for i in range(n):
+#     for k in range(n - i - 1):
+#         print(" ", end="")
+#     for j in range(i + 1):
+#         print(chr(65 + j), end="")
+#     for l in range(i, 0, -1):
+#         print(chr(65 + l - 1), end="")
+#     print()
+
+
+
+
+"""print ABCD from the last character outside and the first character in the core of the right angled triangle"""
+# n = 5
+# for i in range(1, n + 1):
+#     for j in range(i, 0, -1):
+#         print(chr(65 + n - j), end="")
+#     print()
+
+
+
+
+"""Print two triangles pointing the sharp side towards the other"""
+# n = 5
+# for i in range(n + 1):
+#     for j in range(i + 1):
+#         print("*", end="")
+#     for k in range(0, 2 * n - (2 * i)):
+#         print(" ", end="")
+#     for l in range(i + 1):
+#         print("*", end="")
+#     print()
+
+# for i in range(n):
+#     for j in range(n - i):
+#         print("*", end="")
+#     for k in range(0, 2 * (i + 1)):
+#         print(" ", end="")
+#     for l in range(i + 1, n + 1):
+#         print("*", end="")
+#     print()
+
+
+
+
+"""Print empty diamond shape of stars"""
+# n = 5
+# for i in range(n):
+#     for j in range(n - i):
+#         print("*", end="")
+#     for k in range(0, 2 * (i + 1)):
+#         print(" ", end="")
+#     for l in range(i + 1, n + 1):
+#         print("*", end="")
+#     print()
+
+# for i in range(n + 1):
+#     for j in range(i + 1):
+#         print("*", end="")
+#     for k in range(0, 2 * n - (2 * i)):
+#         print(" ", end="")
+#     for l in range(i + 1):
+#         print("*", end="")
+#     print()
+
+
+"""Empty rectangle of stars"""
+# n = 5
+# for i in range(n):
+#     for j in range(n):
+#         if i == 0 or j == 0 or i == n - 1 or j == n - 1:
+#             print("*", end="")
+#         else:
+#             print(" ", end="")
+#     print()
+
+
+"""Print a square of n numbers where the min of n is in the core"""
+# n = 5
+# for i in range(2 * n - 1):
+#     for j in range(2 * n - 1):
+#         top = i
+#         left = j
+#         bottom = (2 * n - 2) - i
+#         right = (2 * n - 2) - j
+#         minDist = min(top, left, right, bottom)
+#         print(n - minDist, end=" ")
+#     print()
+
+
