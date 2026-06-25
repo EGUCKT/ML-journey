@@ -244,12 +244,3 @@ with open('testfile.txt', 'r') as f:
             print(content, end='#')
             content = f.read(size)
 """
-with open('students.csv', 'r') as f:
-    lines = f.readlines()
-    for line in lines:
-        name, marks = line.strip().split(',')
-        if name == "name":
-            continue
-        print(f"Student: {name}, Score: {marks}")
-mean = sum([int(line.strip().split(',')[1]) for line in lines if line.strip().split(',')[0] != "name"]) / (len(lines) - 1)
-print(f"Average Score: {mean}")

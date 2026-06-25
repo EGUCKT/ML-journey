@@ -552,7 +552,8 @@ print("Thank you for using the calculator!")"""
 #     count = int(math.log10(n) + 1)
 #     print(count)
 
-"""WORKING ON REAL WORLD DATA FROM MY COLLEGE"""
+
+import pandas as pd
 import matplotlib as mpl
 import numpy as np
 
@@ -560,23 +561,4 @@ df = pd.read_csv("atsres.csv")
 
 sf = df
 
-"""dealing with str, and symbols like '/', '-', '%' and convertign them to NaN and then filling with median while converting to float"""
-sf['ATS Resume Score'] = sf['ATS Resume Score'].replace(r"[^\d.-]", np.nan, regex=True) 
-
-sf['ATS Resume Score'] = pd.to_numeric(sf['ATS Resume Score'], errors= "coerce")
-
-sf['ATS Resume Score'] = sf['ATS Resume Score'].fillna(sf['ATS Resume Score'].median())
-
-print('The mean is:')
-print(sf['ATS Resume Score'].mean())
-
-print('The lowest score is:')
-print(sf['ATS Resume Score'].min())
-print("Whose index is:", sf['ATS Resume Score'].idxmin())
-print(sf.loc[202])
-
-print('The highest score is:')
-print(sf['ATS Resume Score'].max())
-print("Whose index is:", sf['ATS Resume Score'].idxmax())
-print(sf.loc[72])
-
+sf['Name'] = sf['Name'].isnull().sum()
