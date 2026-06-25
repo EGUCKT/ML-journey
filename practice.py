@@ -543,3 +543,13 @@ print("Thank you for using the calculator!")"""
 #         print(n - minDist, end=" ")
 #     print()
 
+
+# import math
+# n = int(input("Enter a num and the script will tell the number of digits in it: "))
+# if n == 0:
+#     print("Bro zeroes can not be put in this!")
+# else:
+#     count = int(math.log10(n) + 1)
+#     print(count)
+
+
