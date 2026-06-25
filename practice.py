@@ -579,4 +579,3 @@ print('The highest score is:')
 print(sf['ATS Resume Score'].max())
 print("Whose index is:", sf['ATS Resume Score'].idxmax())
 print(sf.loc[72])
-
