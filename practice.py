@@ -543,7 +543,7 @@ print("Thank you for using the calculator!")"""
 #         print(n - minDist, end=" ")
 #     print()
 
-
+"""Number of digits in a number"""
 # import math
 # n = int(input("Enter a num and the script will tell the number of digits in it: "))
 # if n == 0:
@@ -552,17 +552,77 @@ print("Thank you for using the calculator!")"""
 #     count = int(math.log10(n) + 1)
 #     print(count)
 
-num = [2, 4, 5, 8, 9, 7]
-target = 9
-result = []
-mem = {}
-cnt = 0
-for i in range(len(num)):
-    crnum = num[i]
-    cnt = target - crnum
-    if cnt in mem:
-        result = [mem[cnt], i]
-        break
-    mem[crnum] = i
 
-print(result)
+
+"""Memory using dict, two sum"""
+# num = [2, 4, 5, 8, 9, 7]
+# target = 17
+# result = []
+# mem = {}
+# cnt = 0
+# for i in range(len(num)):
+#     crnum = num[i]
+#     cnt = target - crnum
+#     if cnt in mem:
+#         result = [mem[cnt], i]
+#         break
+#     mem[crnum] = i
+
+# print(result)
+
+
+
+"""Reversed num"""
+# n = -1230
+
+# maxl = 2 ** 31
+# minl = -2 ** 31 - 1
+
+# sign = 1
+# if n < 0:
+#     sign = -1
+#     n = -n
+
+# revnum = 0
+# crnum = 0
+
+# while n > 0:
+#     crnum = n % 10
+#     revnum = (revnum * 10) + crnum
+#     n = n // 10
+# result = sign * revnum
+# print(result)
+
+
+"""Palindrome check"""
+
+# n = 13231
+# revnum = 0
+# og = n
+# if n < 0:
+#     print(False)
+# else:
+#     while n > 0:
+#         crnum = n % 10
+#         revnum = (revnum * 10) + crnum
+#         n = n // 10
+#     if og == revnum:
+#         print(True)
+#     else:
+#         print(False)
+
+
+"""Greatest common divisor of two nums"""
+# a = 198
+# b = 293
+
+# while a > 0 and b > 0:
+#     if a > b:
+#         a = a % b
+#     else:
+#         b = b % a
+# if a == 0:
+#     print(b)
+# else:
+#     print(a)
+
