@@ -626,3 +626,65 @@ print("Thank you for using the calculator!")"""
 # else:
 #     print(a)
 
+
+
+"""Find the median of two sorted arrays(naive approach O(n) complexity)"""
+# num1 = [1, 3]
+# num2 = [2, 4, 5]
+# mrgd = sorted(num1 + num2)
+# ln = len(mrgd)
+# mid = len(mrgd) // 2
+
+# if ln % 2 == 0:
+#     print((mrgd[mid - 1] + mrgd[mid]) / 2)
+# else:
+#     print(mrgd[mid])
+
+
+
+"""O(1) time complexity"""
+# num1 = [1, 3]
+# num2 = [2, 4]
+
+# if len(num1) > len(num2):
+#     num1, num2 = num2, num1
+
+# m, n = len(num1), len(num2)
+# totalhlf = (m + n + 1) / 2
+# print(totalhlf)
+
+
+"""Binary search approach (O(log(min(m, n))))"""
+
+num1 = [1, 3, 6, 7, 9]
+num2 = [2, 4, 5]
+
+if len(num1) > len(num2):
+    num1, num2 = num2, num1
+
+m, n = len(num1), len(num2)
+low, high = 0, m
+totalhlf = (m + n + 1) // 2
+
+while low <= high:
+    i = (low + high) // 2 # for this specific example i = 2
+    j = (totalhlf - i)
+
+    left1 = num1[i - 1] if i > 0 else float('-inf') #left1 = 3
+    right1 = num1[i] if i < m else float('inf') #right1 = 6
+
+    left2 = num2[j - 1] if j > 0 else float('-inf') #left2 = 4
+    right2 = num2[j] if j < n else float('inf') #right2 = 5
+
+    if left1 <= right2 and right1 >= left2:
+        if (m + n) % 2 == 0:
+            median = (max(left1, left2) + min(right1, right2)) / 2
+            print(median)        
+        else:
+            median = max(left1, left2)
+            print(median)
+        break
+    elif left1 > right2:
+        high = i - 1
+    else:
+        low = i + 1
