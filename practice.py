@@ -697,3 +697,19 @@ print("Thank you for using the calculator!")"""
 # for i in range(1, n+1):
 #     fact *= i
 # print(fact)
+
+
+"""Meeting Rooms problem leetcode 252(Amazon)"""
+# a = [[7, 9], [1, 3], [4, 6]]
+# a.sort()
+# final_result = True
+# for i in range(len(a) - 1):
+#     m = min(a[i+1])
+#     m1 = max(a[i])
+#     result = m1 < m
+#     if result == False:
+#         final_result = False
+#         break
+
+# print(final_result)
+
