@@ -155,7 +155,7 @@ print("Thank you for using the calculator!")"""
 
 
 
-"""Sum of first 50 positive integers ending wiht the given digit d"""
+"""Sum of first 50 positive integers ending with the given digit d"""
 # d = int(input("Enter the num; "))
 
 # count = 0
@@ -712,4 +712,25 @@ print("Thank you for using the calculator!")"""
 #         break
 
 # print(final_result)
+
+
+
+
+"""Check armstrong number"""
+# n = 153
+# count = len(str(n))
+# sum = 0
+# ans = n
+
+# while n > 0:
+#     ld = n % 10
+#     sum += ld ** count
+#     n = n // 10
+
+# if sum == ans:
+#     print(True)
+# else:
+#     print(False)
+
+
 
