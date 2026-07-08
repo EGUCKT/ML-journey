@@ -734,3 +734,16 @@ print("Thank you for using the calculator!")"""
 
 
 
+
+"""Find all divisors"""
+# import math
+# n = 6
+# ans = []
+# for i in range(1, int(math.sqrt(n)) + 1):
+#     if n % i == 0:
+#         ans.append(i)
+#         if i != n // i:
+#             ans.append(n // i)
+# print(sorted(ans))
+
+
