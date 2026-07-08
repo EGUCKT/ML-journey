@@ -747,3 +747,15 @@ print("Thank you for using the calculator!")"""
 # print(sorted(ans))
 
 
+"""Find prime number"""
+
+# import math
+# n = 8
+# ans = []
+# for i in range(2, int(math.sqrt(n)) + 1):
+#     if n % i == 0:
+#         print(False)
+#         break
+# else:
+#     print(True)
+
