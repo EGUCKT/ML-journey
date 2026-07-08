@@ -760,16 +760,88 @@ print("Thank you for using the calculator!")"""
 #     print(True)
 
 
-"""Recursion"""
+"""RECURSION"""
 
-name = 'Atharv'
+# name = 'Atharv'
 
-def printname(name, cnt=0, n=5):
-    if cnt == n:
-        return
-    else:
-        print(name, end=' ')
+# def printname(name, cnt=0, n=5):
+#     if cnt == n:
+#         return
+#     else:
+#         print(name, end=' ')
 
-    return printname(name, cnt + 1)
+#     return printname(name, cnt + 1)
 
-printname(name, cnt=0, n=5)
+# printname(name, cnt=0, n=5)
+
+
+
+"""Print num from 1 to n using recursion"""
+# def printnum(num = 1, n = 10):
+#     if n < num:
+#         return
+#     else:
+#         print(num)
+
+#     return printnum(num + 1, n)
+
+# printnum(num = 1, n = 10)
+
+
+
+"""Print num from n to 1"""
+
+# n = 10
+# def printnum(n):
+#     if n == 0:
+#         return
+#     else:
+#         print(n)
+
+#     return printnum(n - 1)
+
+# printnum(n)
+
+
+"""sum of first n natural nums"""
+# def printsum(n = 5):
+#     if n == 0:
+#         return 0
+#     return n + printsum(n - 1)
+
+# print(printsum(n=5))
+
+
+"""Factorial of n"""
+
+# def fact(n = 5):
+#     if n == 0:
+#         return 1
+#     return n * fact(n - 1)
+
+# print(fact(n = 5))
+
+
+"""Reverse a given array"""
+# def revarr(arr, left, right):
+#     if left >= right:
+#         return
+#     arr[left], arr[right] = arr[right], arr[left]
+#     return revarr(arr, left + 1, right - 1)
+# arr = [1, 2, 3, 4, 5]
+# revarr(arr, 0, len(arr) - 1)
+
+# print(arr)
+
+
+"""Palindrome check"""
+
+# def pal(left : int, right: int) -> bool:
+#     if left >= len(st) // 2:
+#         return True
+#     if st[left] != st[right]:
+#         return False
+    
+#     return pal(left + 1, right - 1)
+# st = 'hannah'
+# print(pal(0, len(st) - 1))
