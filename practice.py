@@ -759,3 +759,17 @@ print("Thank you for using the calculator!")"""
 # else:
 #     print(True)
 
+
+"""Recursion"""
+
+name = 'Atharv'
+
+def printname(name, cnt=0, n=5):
+    if cnt == n:
+        return
+    else:
+        print(name, end=' ')
+
+    return printname(name, cnt + 1)
+
+printname(name, cnt=0, n=5)
