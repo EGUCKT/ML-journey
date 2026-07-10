@@ -559,12 +559,12 @@ print("Thank you for using the calculator!")"""
 # target = 17
 # result = []
 # mem = {}
-# cnt = 0
+# complement = 0
 # for i in range(len(num)):
 #     crnum = num[i]
-#     cnt = target - crnum
-#     if cnt in mem:
-#         result = [mem[cnt], i]
+#     complement = target - crnum
+#     if complement in mem:
+#         result = [mem[complement], i]
 #         break
 #     mem[crnum] = i
 
@@ -929,3 +929,32 @@ print("Thank you for using the calculator!")"""
 #         max_count = memory[i]
 #         max_element = i
 # print(max_element)
+
+
+"""Fibonacci series using recursion and hashmap"""
+# memo = {}
+# def fib(n):
+#     if n <= 1:
+#         return n
+#     if n in memo:
+#         return memo[n]
+#     if n not in memo:
+#         memo[n] = fib(n - 1) + fib(n - 2)
+#     return memo[n]
+
+# print(fib(10))  # Example usage: prints the 10th Fibonacci number
+
+"""Highest frequency counter using hashmap"""
+
+mem = {}
+nums = [1, 2, 2, 1, 3]
+count = 0
+for i in nums:
+    if i not in mem:
+        mem[i] = 1
+    else:
+        mem[i] += 1
+result = []
+for i, cnt in mem.items():
+    result.append([i, cnt])
+print(result)
