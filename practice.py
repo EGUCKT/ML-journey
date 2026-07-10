@@ -845,3 +845,87 @@ print("Thank you for using the calculator!")"""
 #     return pal(left + 1, right - 1)
 # st = 'hannah'
 # print(pal(0, len(st) - 1))
+
+"""Palindrome check for leetcode"""
+# import re
+# def pal(left: int, right: int) -> bool:
+#     if left >= len(gs) // 2:
+#         return True
+#     if gs[left] != gs[right]:
+#         return False
+#     return pal(left + 1, right - 1)
+
+# s = ' '
+# gs = re.sub(r'[^a-zA-Z]', "", s).lower()
+# print(pal(0, len(gs) - 1))
+# print(gs)
+
+
+"""Remove duplicate elements from an array(Two pointer approach) leetcode(26)"""
+
+# nums = [1, 1, 2, 3, 3, 3, 3, 3, 4, 4, 5]
+# left = 0
+# for i in range(1, len(nums)):
+#     if nums[left] != nums[i]:
+#         left += 1
+#         nums[left] = nums[i]
+        
+# nums = nums[:left + 1]
+# print(nums)
+
+
+"""Remove duplicate elements from an array but keep at most 2 duplicate elements(leetcode 80)"""
+
+# nums = [0,0,1,1,1,1,2,3,3]
+# k = 2
+# for i in range(2, len(nums)):
+#     if nums[k - 2] != nums[i]:
+#         nums[k] = nums[i]
+#         k += 1
+#     else:
+#         pass
+# nums = nums[:k]
+# print(nums)
+
+
+"""majority element from an array (leetcode 169)"""
+"""Easy method using sorting when the majority element is present n/2 times in the array"""
+# arr = [1, 2, 4, 1, 1, 1, 1, 4]
+# j = len(arr)
+
+# arr.sort()
+
+# print(arr[j//2])
+
+"""Using Boyer Moore's voting algorithm when the majority element is present n/2 times in the array"""
+
+# nums = [1, 2, 4, 1, 1, 1, 1, 4]
+# candidate = None
+# count = 0
+
+# for num in nums:
+#     if count == 0:
+#         candidate = num
+#     if num == candidate:
+#         count += 1
+#     else:
+#         count -= 1
+
+# print(candidate)
+
+
+"""For any array no matter the majority threshold"""
+"""Using hashmap"""
+# memory = {}
+# arr = [1, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5 ,6, 7, 8, 9, 2, 2, 2]
+# max_count = 0
+# max_element = None
+# for i in arr:
+#     if not i in memory:
+#         memory[i] = 1
+#     else:
+#         memory[i] += 1
+#     if memory[i] > max_count:
+#         max_count = memory[i]
+#         max_element = i
+# print(max_element)
