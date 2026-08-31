@@ -944,17 +944,35 @@ print("Thank you for using the calculator!")"""
 
 # print(fib(10))  # Example usage: prints the 10th Fibonacci number
 
-"""Highest frequency counter using hashmap"""
 
-mem = {}
-nums = [1, 2, 2, 1, 3]
-count = 0
-for i in nums:
-    if i not in mem:
-        mem[i] = 1
-    else:
-        mem[i] += 1
-result = []
-for i, cnt in mem.items():
-    result.append([i, cnt])
-print(result)
+"""Highest frequency counter using hashmap"""
+# mem = {}
+# nums = [1, 2, 2, 1, 3]
+# count = 0
+# for i in nums:
+#     if i not in mem:
+#         mem[i] = 1
+#     else:
+#         mem[i] += 1
+# result = []
+# for i, cnt in mem.items():
+#     result.append([i, cnt])
+# print(result)
+
+
+"""Highest occuring element in an array using hashmap and if there are multiple elements with the same frequency then return the smaller one"""
+# mem = {}
+# nums = [1, 2, 2, 2, 3, 4, 4, 4, 5]
+# for i in nums:
+#     if i in mem:
+#         mem[i] += 1
+#     else:
+#         mem[i] = 1
+# result = []
+
+# for i, cnt in mem.items():
+#     result.append([i, cnt])
+
+# print(max(result))
+
+
