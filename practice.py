@@ -931,7 +931,7 @@ print("Thank you for using the calculator!")"""
 # print(max_element)
 
 
-"""Fibonacci series using recursion and hashmap"""
+"""Fibonacci series using recursion and hashmap (leetcode 509)"""
 # memo = {}
 # def fib(n):
 #     if n <= 1:
@@ -974,5 +974,29 @@ print("Thank you for using the calculator!")"""
 #     result.append([i, cnt])
 
 # print(max(result))
+
+
+"""Max brackets needed to maintain equilibrium"""
+# s = "())))"
+# par = 0
+# pir = 0
+
+# if s == '':
+#     print(0)
+# else:
+#     for i in s:
+#         if i == '(':
+#             par += 1
+#         if i == ')':
+#             pir += 1
+
+# result = 0
+# if par > pir:
+#     result = par - pir
+# elif par < pir:
+#     result = pir - par
+# elif par == pir:
+#     print(0)
+# print(result)
 
 
