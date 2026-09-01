@@ -836,7 +836,7 @@ print("Thank you for using the calculator!")"""
 
 """Palindrome check"""
 
-# def pal(left : int, right: int) -> bool:
+# def pal(left: int, right: int) -> bool:
 #     if left >= len(st) // 2:
 #         return True
 #     if st[left] != st[right]:
@@ -998,5 +998,25 @@ print("Thank you for using the calculator!")"""
 # elif par == pir:
 #     print(0)
 # print(result)
+
+
+"""Sliding Window (Leetcode 1838)"""
+# nums = [1, 4, 6, 10]
+# k = 5
+# nums.sort()
+# left = 0
+# curr = 0
+
+
+# for right in range(len(nums)):
+#     target = nums[right]
+#     curr += target
+#     if (right - left + 1) * target - curr > k:
+#         curr -= nums[left]
+#         left += 1
+        
+        
+# print(len(nums) - left)
+
 
 
