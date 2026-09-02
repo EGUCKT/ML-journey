@@ -1035,3 +1035,17 @@ print("Thank you for using the calculator!")"""
 # print(nums)
 
 
+"""Exchange sort"""
+# nums = [5, 4, 4, 1, 1]
+# left = 0
+
+
+# for i in range(len(nums)):
+#     for j in range(i + 1, len(nums)):
+#         if nums[j] < nums[left]:
+#             nums[j], nums[left] = nums[left], nums[j]
+#     left += 1
+
+# print(nums)
+
+
