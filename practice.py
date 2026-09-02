@@ -1020,3 +1020,18 @@ print("Thank you for using the calculator!")"""
 
 
 
+"""Selection sort"""
+
+# nums = [3, 2, 3, 4, 5]
+# left = 0
+
+# for i in range(len(nums)):
+#     left = i
+#     for j in range(i + 1, len(nums)):
+#         if nums[j] < nums[left]:
+#             left = j
+#     nums[i], nums[left] = nums[left], nums[i]
+
+# print(nums)
+
+
