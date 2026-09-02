@@ -1049,3 +1049,29 @@ print("Thank you for using the calculator!")"""
 # print(nums)
 
 
+"""Bubble sort (Brute Force)"""
+# nums = [5, 4, 4, 1, 1]
+# left = 0
+
+
+# for i in range(len(nums)):
+#     for j in range(len(nums) - 1):
+#         if nums[j] > nums[j + 1]:
+#             nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+# print(nums)
+
+
+"""Bubble sort (Optimized approach(-i))"""
+# nums = [5, 4, 4, 1, 1]
+# left = 0
+
+
+# for i in range(len(nums)):
+#     for j in range(len(nums) - i - 1):
+#         if nums[j] > nums[j + 1]:
+#             nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+# print(nums)
+
+
