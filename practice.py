@@ -1142,3 +1142,22 @@ print("Thank you for using the calculator!")"""
 #     return bbl(nums, n - 1)
 # print(bbl(nums = [4, 3, 2, 16, 4, 2, 1]))
 
+
+"""Recursive Insertion Sort"""
+
+# def ins(nums: list[int], n = None):
+#     if n is None:
+#         n = len(nums)
+#     if n <= 1:
+#         return
+#     ins(nums, n - 1)
+#     key = nums[n - 1]
+#     j = n - 2
+#     while j >= 0 and nums[j] > key:
+#         nums[j + 1] = nums[j]
+#         j -= 1
+#     nums[j + 1] = key
+#     return nums
+
+# print(ins(nums = [1, 2, 1, 6, 3]))
+
