@@ -1128,3 +1128,17 @@ print("Thank you for using the calculator!")"""
 
 # print(divide(arr = [2, 4, 2, 1, 6, 5, 3, 9, 8, 1]))
 
+
+"""Recursive Bubble Sort"""
+
+# def bbl(nums: list[int], n = None) -> list[int]:
+#     if n is None:
+#         n = len(nums)
+#     if n == 1:
+#         return nums
+#     for i in range(n - 1):
+#         if nums[i] > nums[i + 1]:
+#             nums[i + 1], nums[i] = nums[i], nums[i + 1]
+#     return bbl(nums, n - 1)
+# print(bbl(nums = [4, 3, 2, 16, 4, 2, 1]))
+
