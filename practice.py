@@ -1161,3 +1161,54 @@ print("Thank you for using the calculator!")"""
 
 # print(ins(nums = [1, 2, 1, 6, 3]))
 
+
+"""Quick Sort"""
+
+# def partition(nums: list[int], low: int, high: int) -> int:
+#     # Choose the first element as the pivot
+#     pivot = nums[low]
+#     i = low
+#     j = high
+
+#     while i < j:
+#         # Move 'i' right as long as elements are smaller than or equal to pivot
+#         while i <= high and nums[i] <= pivot:
+#             i += 1
+        
+#         # Move 'j' left as long as elements are strictly greater than pivot
+#         while j >= low and nums[j] > pivot:
+#             j -= 1
+        
+#         # If pointers haven't crossed yet, swap the misplaced elements
+#         if i < j:
+#             nums[i], nums[j] = nums[j], nums[i]
+            
+#     # Once i and j cross, 'j' is the correct final home for the pivot.
+#     # Swap the pivot into its final resting place.
+#     nums[low], nums[j] = nums[j], nums[low]
+    
+#     return j  # Return the index where the pivot settled
+
+
+# def quickSortHelper(nums: list[int], low: int, high: int):
+#     # BASE CASE: If the section has 0 or 1 elements, it's already sorted
+#     if low < high:
+#         # Step 1: Put the pivot in its right spot and get its index
+#         pivot_index = partition(nums, low, high)
+        
+#         # Step 2: Recursively sort the left side of the pivot
+#         quickSortHelper(nums, low, pivot_index - 1)
+        
+#         # Step 3: Recursively sort the right side of the pivot
+#         quickSortHelper(nums, pivot_index + 1, high)
+
+
+# def quickSort(nums: list[int]) -> list[int]:
+#     quickSortHelper(nums, 0, len(nums) - 1)
+#     return nums
+
+
+# my_list = [25, 57, 48, 37, 12, 92, 86, 33]
+# print(quickSort(my_list))
+
+
