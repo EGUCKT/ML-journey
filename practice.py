@@ -1222,3 +1222,21 @@ print("Thank you for using the calculator!")"""
 #         max = i
 # print(max)
 
+"""Second largest element in an array"""
+
+# nums = [8, 8, 7, 6, 5]
+
+# maxi = float("-inf")
+# lmax = float("-inf")
+
+# for i in nums:
+#     if i > maxi:
+#         lmax = maxi
+#         maxi = i
+#     elif i > lmax and i != maxi:
+#         lmax = i
+# if lmax == float("-inf"):
+#     lmax = -1
+
+# print(lmax)
+
