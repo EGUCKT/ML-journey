@@ -1212,3 +1212,13 @@ print("Thank you for using the calculator!")"""
 # print(quickSort(my_list))
 
 
+"""Largest number in an array"""
+
+# nums = [2, 3, 1, 8, 5, 1]
+
+# max = 0
+# for i in nums:
+#     if i > max:
+#         max = i
+# print(max)
+
