@@ -1247,3 +1247,23 @@ print("Thank you for using the calculator!")"""
 # print(sum(nums[i] > nums[(i + 1) % len(nums)] for i in range(len(nums))) <= 1)
 
 
+"""Move zeroes to the end of the array (in place) (Leetcode 283)"""
+"""BRUTE FORCE APPROACH (TLE error)"""
+# nums = [0, 1, 0, 3, 12, 0, 2]
+# for i in range(len(nums) - 1):
+#     for j in range(len(nums) - 1):
+#         if nums[j] == 0:
+#             nums[j] , nums[j + 1] = nums[j + 1], nums[j]
+
+# print(nums)
+
+"""Optimal two pointer approach"""
+# nums = [0, 1, 0, 3, 12, 0, 2]
+# left = 0
+# for i in range(len(nums)):
+#     if nums[i] != 0:
+#         nums[i], nums[left] = nums[left], nums[i]
+#         left += 1
+# print(nums)
+
+
