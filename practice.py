@@ -1240,3 +1240,10 @@ print("Thank you for using the calculator!")"""
 
 # print(lmax)
 
+
+"""Check if the array is sorted or rotated (leetcode 1752)"""
+
+# nums = [6, 1, 3, 4]
+# print(sum(nums[i] > nums[(i + 1) % len(nums)] for i in range(len(nums))) <= 1)
+
+
