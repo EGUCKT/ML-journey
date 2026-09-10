@@ -230,18 +230,11 @@ print("Thank you for using the calculator!")"""
 #     print()
 
 
-
-
-
-
 """Reversed right angled triangle of digits"""
 # for i in range(5):
 #     for j in range(1, 5 - i + 1):
 #         print(j, end="")
 #     print()
-
-
-
 
 
 """Subarray of the maximum total"""
@@ -283,16 +276,12 @@ print("Thank you for using the calculator!")"""
 #     print()
 
 
-
-
 """Right angled reverse triangle of digits"""
 # n = 5
 # for i in range(1, n+1):
 #     for j in range(1, (n+1) - i + 1):
 #         print(j, end=" ")
 #     print()
-
-
 
 
 """Left angled triangle"""
@@ -335,9 +324,6 @@ print("Thank you for using the calculator!")"""
 #     for k in range(2 * n - (2 * i + 1)):
 #         print("*", end="")
 #     print()
-
-
-
 
 
 """Diamond of stars"""
@@ -399,7 +385,6 @@ print("Thank you for using the calculator!")"""
 
 
 
-
 """Two right angled pyramids of digits(reversed) together with space in between increasing"""
 # n = 10
 
@@ -439,8 +424,6 @@ print("Thank you for using the calculator!")"""
 #     for j in range(i + 1):
 #         print(chr(65 + i), end="")
 #     print()
-
-
 
 
 """Print ABCD for decreasing order starting from A for each row n"""
@@ -495,7 +478,6 @@ print("Thank you for using the calculator!")"""
 #     for l in range(i + 1, n + 1):
 #         print("*", end="")
 #     print()
-
 
 
 
@@ -1266,4 +1248,13 @@ print("Thank you for using the calculator!")"""
 #         left += 1
 # print(nums)
 
-
+"""Check if the array contains special elements which are contiguous and return the number of special elements (leetcode 4038)"""
+# nums = [37, 1, 2, 1, 1, 22]
+# cntr = 0
+# for x in set(nums):
+#     fdx = nums.index(x)
+#     ldx = len(nums) - 1 - nums[::-1].index(x)
+#     if all(nums[i] == x for i in range(fdx, ldx + 1)):
+#         cntr += 1
+# print(cntr)
+                  
