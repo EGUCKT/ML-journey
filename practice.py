@@ -1258,3 +1258,20 @@ print("Thank you for using the calculator!")"""
 #         cntr += 1
 # print(cntr)
                   
+"""Count the number of substrings with exactly k distinct characters (leetcode 3405)"""
+# s = "aa"
+# b = s + s
+# k = 1
+# cnt = 0
+# l = len(s)
+# for i in range(l):
+#     rt = b[i : i + len(s)]
+#     c = 0
+#     for j in range(l - 1):
+#         if rt[j] == rt[j + 1]:
+#             c += 1
+#     if c == k:
+#         cnt += 1
+# print(cnt)
+
+
