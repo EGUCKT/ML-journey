@@ -237,7 +237,7 @@ print("Thank you for using the calculator!")"""
 #     print()
 
 
-"""Subarray of the maximum total"""
+"""Subarray of the maximum total (Leetcode 53) (Kadane's Algorithm)"""
 # s = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 # running_total = s[0]
 # total = s[0]
@@ -1274,4 +1274,19 @@ print("Thank you for using the calculator!")"""
 #         cnt += 1
 # print(cnt)
 
+
+"""Sum of decoded numbers (Leetcode 4039)"""
+# nums = [2522,2101]
+# l = []
+# MOD = 10**9 + 7
+# total = 0
+# for i in nums:
+#     w = i % 10
+#     d = i // 10
+#     dst = str(d)
+#     x = int(dst[:w])
+#     y = int(dst[w:])
+#     value = pow(x, y, MOD)
+#     total = (total + value) % MOD
+# print(total)
 
