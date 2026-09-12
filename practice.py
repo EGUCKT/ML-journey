@@ -1327,3 +1327,70 @@ print("Thank you for using the calculator!")"""
 # print(water)
 
 
+"""Rotate the array k times (Leetcode 189)"""
+"""Brute Force"""
+"""TLE Error"""
+# nums = [1,2,3,4,5,6,7]
+# k = 3
+# for i in range(k):
+#     last = nums.pop()
+#     nums.insert(0, last)
+# print(nums)
+
+"""Slicing method"""
+"""Not suitable for leetcode"""
+# nums = [1,2,3,4,5,6,7]
+# k = 3
+# k = k % len(nums)
+# nums = nums[-k:] + nums[:-k]
+# print(nums)
+
+
+"""Two pointer approach"""
+"""My approach (Not applicable for negative elements of an array)"""
+# nums = [1,2,3,4,5,6,7,8,9,10,11,12]
+# k = 3
+# i = 0
+# n = len(nums) - 1
+# j = len(nums) - 1
+
+# while i < j:
+#     nums[i], nums[j] = nums[j], nums[i]
+#     i += 1
+#     j -= 1
+
+# i = 0
+# p = k
+
+# while p >= i:
+#     p -= 1
+#     nums[i], nums[p] = nums[p], nums[i]
+#     i += 1
+
+# while n >= k:
+#     nums[k] , nums[n] = nums[n], nums[k]
+#     k += 1
+#     n -= 1
+
+# print(nums)
+
+
+"""Optimal method"""
+"""Using recursion"""
+
+# def rev(nums: list[int], k: int) -> list[int]:
+#     n = len(nums)
+#     k %= n
+#     def rot(l, r):
+#         while l < r:
+#             nums[l], nums[r] = nums[r], nums[l]
+#             l += 1
+#             r -= 1
+#     rot(0, n - 1)
+#     rot(0, k - 1)
+#     rot(k, n - 1)
+#     return nums
+
+# print(rev([1,2,3,4,5,6,7,8,9,10,11,12], 3))
+
+
