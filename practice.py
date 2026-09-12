@@ -1308,3 +1308,22 @@ print("Thank you for using the calculator!")"""
 # print(s[::-1])
 
 
+"""Leetcode 11 | Container with most water"""
+# nums = [1,8,6,2,5,4,8,3,7]
+# l = 0
+# r = len(nums) - 1
+# map = []
+# water = 0
+# while l < r:
+#     w = r - l
+#     h = min(nums[l], nums[r])
+#     cra = h * w
+#     water = max(water, cra)
+#     if nums[l] < nums[r]:
+#         l += 1
+#     else:
+#         r -= 1
+
+# print(water)
+
+
