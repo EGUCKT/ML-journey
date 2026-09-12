@@ -1290,3 +1290,21 @@ print("Thank you for using the calculator!")"""
 #     total = (total + value) % MOD
 # print(total)
 
+"""Reverse an array of strings (Leetcode 344)"""
+"""Leetcode way"""
+# s = ["a", "b", "c", "d", "e"]
+# j = len(s) - 1
+# i = 0
+
+# while i < j:
+#     s[i], s[j] = s[j], s[i]
+#     j -= 1
+#     i += 1
+# print(s)
+
+"""My way"""
+
+# s = ["a", "b", "c", "d", "e"]
+# print(s[::-1])
+
+
