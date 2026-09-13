@@ -1,3 +1,4 @@
+from collections import defaultdict
 from secrets import choice
 import pandas as pd
 from pandas import options
@@ -1393,4 +1394,16 @@ print("Thank you for using the calculator!")"""
 
 # print(rev([1,2,3,4,5,6,7,8,9,10,11,12], 3))
 
+
+"""Linear search"""
+# nums = [1, 2, 3, 4, 6, 7]
+# target = 5
+# found = -1
+# for i in range(len(nums)):
+#     if nums[i] == target:
+#         found = 1
+#         break
+# if i == len(nums) and found == -1:
+#     print(found)
+# print(found)
 
