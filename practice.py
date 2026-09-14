@@ -1407,3 +1407,42 @@ print("Thank you for using the calculator!")"""
 #     print(found)
 # print(found)
 
+"""Union of two sorted arrays"""
+"""Two pointer approach"""
+# nums1 = [1, 2, 3, 4, 5]
+# nums2 = [1, 2, 7]
+
+# i, j = 0, 0
+# union = []
+
+# while i < len(nums1) and j < len(nums2):
+#     if i > 0 and nums1[i] == nums1[i-1]:
+#         i += 1
+#         continue
+#     if j > 0 and nums2[j] == nums2[j-1]:
+#         j += 1
+#         continue
+
+#     if nums1[i] < nums2[j]:
+#         union.append(nums1[i])
+#         i += 1
+#     elif nums2[j] < nums1[i]:
+#         union.append(nums2[j])
+#         j += 1
+#     else:  
+#         union.append(nums1[i])
+#         i += 1
+#         j += 1
+
+# while i < len(nums1):
+#     if i == 0 or nums1[i] != nums1[i-1]:
+#         union.append(nums1[i])
+#     i += 1
+
+# while j < len(nums2):
+#     if j == 0 or nums2[j] != nums2[j-1]:
+#         union.append(nums2[j])
+#     j += 1
+
+# print(union) 
+
